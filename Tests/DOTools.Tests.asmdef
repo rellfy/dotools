@@ -1,6 +1,9 @@
 {
-    "name": "DOTools",
+    "name": "dotools.Editor",
     "references": [
+        "GUID:27619889b8ba8c24980f49ee34dbb44a",
+        "GUID:0acc523941302664db1f4e527237feb3",
+        "GUID:449d55c408371094f9b1bb0aedc1f6eb",
         "GUID:734d92eba21c94caba915361bd5ac177",
         "GUID:8a2eafa29b15f444eb6d74f94a930e1d",
         "GUID:63afb046c8423dd448ae7aba042ea63d",
@@ -17,11 +20,15 @@
         "GUID:44dcb2bf5b9be4b5aa76674c8edcd1d5",
         "GUID:e04e6c86a9f3947eb95fded39f9e60cc"
     ],
-    "includePlatforms": [],
+    "includePlatforms": [
+        "Editor"
+    ],
     "excludePlatforms": [],
     "allowUnsafeCode": false,
-    "overrideReferences": false,
-    "precompiledReferences": [],
+    "overrideReferences": true,
+    "precompiledReferences": [
+        "nunit.framework.dll"
+    ],
     "autoReferenced": true,
     "defineConstraints": [],
     "versionDefines": [],
