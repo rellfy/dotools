@@ -1,0 +1,17 @@
+{
+    "name": "com.rellfy.dotools",
+    "version": "0.0.1",
+    "displayName": "DOT Tools",
+    "description": "DOTS utility library",
+    "unity": "2019.4",
+    "dependencies": {
+        "com.unity.entities": "0.11.1-preview.4",
+        "com.unity.mathematics": "1.1.0",
+        "com.unity.physics": "0.4.0-preview.5",
+        "com.unity.jobs": "0.2.10-preview.12"
+    },
+    "author": {
+        "name": "Lorenzo Fontoura",
+        "url": "https://rellfy.com/"
+    }
+}
