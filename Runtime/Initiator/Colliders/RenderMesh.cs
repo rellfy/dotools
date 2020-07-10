@@ -20,15 +20,6 @@ namespace DOTools {
 
         private static Entity GetEntityWithRenderMeshRequirements(World world) {
             Entity entity = Transform(world);
-
-            world.EntityManager.AddComponents(entity,
-                new ComponentTypes(
-                    ComponentType.ReadWrite<RenderBounds>(),
-                    ComponentType.ReadWrite<WorldRenderBounds>(),
-                    ComponentType.ReadWrite<ChunkWorldRenderBounds>()
-                )
-            );
-
             return entity;
         }
 
@@ -44,6 +35,14 @@ namespace DOTools {
             } catch (ArgumentException) {
                 entity.InitiateTransform(world);
             }
+
+            world.EntityManager.AddComponents(entity,
+                new ComponentTypes(
+                    ComponentType.ReadWrite<RenderBounds>(),
+                    ComponentType.ReadWrite<WorldRenderBounds>(),
+                    ComponentType.ReadWrite<ChunkWorldRenderBounds>()
+                )
+            );
 
             world.EntityManager.AddSharedComponentData(entity, renderMesh);
 
